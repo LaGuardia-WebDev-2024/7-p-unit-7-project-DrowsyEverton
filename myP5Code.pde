@@ -9,17 +9,22 @@ var snakeeyes = 10
 var snakehead = 10
 var snakeupperjaw = 20
 var snakelowerjaw = 20
+var netSize
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   fill (0, 90, 20 );
   background(255,255,255,0);
- ellipse(542, 299, 150, 20); // snakebody
- ellipse(488,291,62,32); // snakehead
- rect(466,295,45,10); // snakeupperjaw
+  //snakebody 
+ ellipse(542, 299, 150, 20); 
+ ellipse(488,291,42,32); // snakehead
+ rect(431,284,45,10); // snakeupperjaw
+// secondaries
+ rect (431,295,45,10); // snakelowerjaw
+ fill(252, 249, 157);ellipse(487, 290, 10,10); // snakeeyes
 
-
-
+// net
+line (225,185,30,23);
 
 
 
