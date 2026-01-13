@@ -9,25 +9,26 @@ var snakeeyes = 10
 var snakehead = 10
 var snakeupperjaw = 20
 var snakelowerjaw = 20
-var netSize
-
+var snakeMove = 0
+var bubblSize = 0
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   fill (0, 90, 20 );
   background(255,255,255,0);
   //snakebody 
- ellipse(542, 299, 150, 20); 
- ellipse(488,291,42,32); // snakehead
- rect(431,284,45,10); // snakeupperjaw
+ ellipse(542 + snakeMove, 299, 150, 20); 
+ ellipse(488 + snakeMove,291,42,32); // snakehead
+ rect(431 + snakeMove,284,45,10); // snakeupperjaw
 // secondaries
- rect (431,295,45,10); // snakelowerjaw
- fill(252, 249, 157);ellipse(487, 290, 10,10); // snakeeyes
+ rect (431 + snakeMove,295,45,10); // snakelowerjaw
+ fill(252, 249, 157);ellipse(487 + snakeMove, 290, 10,10); // snakeeyes
 
-// net
-line (225,185,30,23);
+// wordbubble
+line(86,78,10,12); fill(255,255,255); ellipse (104,85,86,60);
 
-
-
+fill(0,0,0)
+text("I-IT'S A SNAKE!",45, );
+snakeMove-= 1;
 
   if(mousePressed){showXYPositions();}
 
