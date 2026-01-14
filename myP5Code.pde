@@ -10,7 +10,7 @@ var snakehead = 10
 var snakeupperjaw = 20
 var snakelowerjaw = 20
 var snakeMove = 0
-var bubbleSize = 0
+
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   fill (0, 90, 20 );
