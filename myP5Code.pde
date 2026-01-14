@@ -10,7 +10,7 @@ var snakehead = 10
 var snakeupperjaw = 20
 var snakelowerjaw = 20
 var snakeMove = 0
-var bubblSize = 0
+var bubbleSize = 0
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   fill (0, 90, 20 );
@@ -27,12 +27,14 @@ draw = function(){
 line(86,78,10,12); fill(255,255,255); ellipse (104,85,86,60);
 
 fill(0,0,0)
-text("I-IT'S A SNAKE!",45, );
+text("I-IT'S A SNAKE!",64,94 );
 snakeMove-= 1;
 
   if(mousePressed){showXYPositions();}
 
 }
+
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
